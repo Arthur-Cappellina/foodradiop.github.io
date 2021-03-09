@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="radio.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
+    <title>Food radio</title>
+</head>
+<body>
+    <script src="matter.js"></script> 
+    <script src="js/functions.js"></script> 
+    <script src="js/geom.js"></script> 
+    <div class="container">
+        <section class="main" id="actu">
+            <div class="header"> 
+                <img src="logo.png" alt="logo">
+                <div class="textes">
+                    <h1>Food Radio</h1>
+                    <h4 class="subtitle">&#171;<i> La radio numéro 1 sur la nourriture </i>&#187;</h4>
+                </div>
+                <div class="jingle">
+                    <h3>Ecoutez notre jingle !</h3>
+                    <audio controls autoplay>
+                        <source src="jingle.mp3" type="audio/mpeg">
+                    </audio>
+                 </div>  
+            </div>
+            <a href="#" class="scroll scroll-down" address="true">&#8681;</a>
+            <div class="data">
+                <div class="texte">
+                    <h2 class="section-title">Bienvenue sur Food Radio,<br> vous y trouverez les dernières actualités sur la nourriture</h2>
+                    <p>En écoutant food Radio, vous serez informé de toutes les informations croustillantes sur le monde de la nourriture. <br> En vous branchant tous les jours à 8h, 12h ou 20h, 
+                        vous écouterez le journal culinaire du jour. <br>   Mais aussi, à tout moment de la journée, vous serez directement informé si une information vient de tomber via nos breakings food.</p>
+                </div>
+                    <img src="nourriture.jpg" alt="nourriture" class="representation">
+            </div>
+        </section>
+        
+        <section class="main" id="debat">
+            <div class="others data2">
+                <img src="debat.jpg" alt="nourriture" class="representation">
+                <div class="texte">
+                    <h2 class="section-title">Mais aussi des débats avec le monde de la gastronomie</h2>
+                    <p>Tous les jours à 17h, retrouvez nos meilleurs journalistes pour des débats inédits sur la nourriture.
+                    <br> Avec des débats comme : <i> faut-il obliger les cantines à proposer un repas végétarien ?</i> ou <i>
+                    Les restaurants doivent-ils rouvrir ? </i>
+                <br> Tous cela avec nos meilleurs spécialistes comme le nutrissioniste M. Charles Attand, le chef cuisinier Bertrand Dufour ou encore 
+                le docteur Hans Müller.</p>
+                </div>
+      
+            </div>
+            <a href="#" class="scroll scroll-down2" address="true">&#8681;</a>
+        </section>
+        <section class="main" id="chronique">
+            <div class="others data">
+                <div class="textes">
+                    <h2 class="section-title">Sans oublier des chroniques culinaires</h2>
+                    <p>Retrouvez plusieurs chroniques culinaires chaque jour afin d'enrichir votre culture personnelle. <br>
+                    Nos consultants voyagent partout dans le monde afin de découvrir des cultures et différentes spécialités, tout plus originales les unes que les autres ! 
+                <br> Vous pourrez écouter des chroniques comme <i>&#171; L'alcool sans alcool &#187;</i>, <i><i>&#171; La cuisine étrangère &#187;</i> ou encore <i>&#171; L'origine de la chanson de l'oignon &#187;</i>.</i></p>
+                </div>
+                <img src="micro.jpg" alt="nourriture" class="representation">
+            </div>
+            <a href="#" class="scroll scroll-down3" address="true">&#8681;</a>
+        </section>
+        <section class="main" id="musique">
+            <div class="others data2">
+                <img src="music.jpg" alt="nourriture" class="representation">
+                <div class="texte">
+                    <h2 class="section-title">Et bien sûr les meilleures musiques culinaires !</h2>
+                    <p>Comment imaginer une radio sans musique ? <br>
+                    Sur Food Radio, la musique est aussi reine. Vous pourrez écouter des classiques de la musique en rapport avec la nourriture 
+                comme <i>“LES CORNICHONS” de Nino Ferrer,</i><i> “LE PETIT PAIN AU CHOCOLAT”, de Joe Dassin</i> ou bien <i>“LES SARDINES”, de Patrick Sébastien </i>.</p>    
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+     $(function() {
+        $('.scroll-down').click (function() {
+           $('html, body').animate({scrollTop: $('section#debat').offset().top }, 'slow');
+           return false;
+        });
+        $('.scroll-down2').click (function() {
+           $('html, body').animate({scrollTop: $('section#chronique').offset().top }, 'slow');
+           return false;
+        });
+        $('.scroll-down3').click (function() {
+           $('html, body').animate({scrollTop: $('section#musique').offset().top }, 'slow');
+           return false;
+        });
+    });        
+    </script>
+        <script src="matter.js"></script> 
+        <script src="js/functions.js"></script> 
+        <script src="js/geom.js"></script> 
+</body>
+</html>
